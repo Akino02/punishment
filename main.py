@@ -91,6 +91,7 @@ def show_users(data:dict):
         print(f"{index+1}] {name}: {data[name]} users deaths == {data[name]*10} kliku")
     print(" ")
 
-while True:
-    users_deaths = load_data()
-    menu(users_deaths)
+if __name__ == "__main__":
+    while True:
+        users_deaths = load_data()
+        menu(users_deaths)
